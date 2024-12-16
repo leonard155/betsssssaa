@@ -1,0 +1,333 @@
+@import url('colors.css');
+@import url('hover.css');
+@import url('scrollbar.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    font-family: var(--font-family);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.hero-content h1 span {
+    color: var(--highlight-color);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #CFCECF;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn.purchase {
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.btn.purchase:hover {
+    background-color: var(--Dprimary-color);
+    transform: translateY(-3px);
+}
+
+.btn.discord {
+    color: #DBDADB;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.btn.discord:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    max-width: 500px;
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* products */
+
+.products {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.description-p-products {
+    font-weight: 700rem !important;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.products h2 {
+    margin: 20px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.products p {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.divider {
+    width: 100%;
+    border: 0;
+    border-top: 2px solid var(--primary-color);
+    margin: 20px 0;
+}
+
+.product-box {
+    flex: 1 1 23%;
+    max-width: 23%;
+    min-height: 500px;
+    border: 1px solid var(--Dprimary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-box h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    font-weight: 700rem;
+}
+
+.product-box .price {
+    width: 93%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid transparent;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%),
+                linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 10px;
+}
+
+
+
+.product-box .description {
+    padding: 0;
+    margin: 20px 0;
+    margin-left: 20px;
+    text-align: left;
+    line-height: 1.6;
+    flex-grow: 1;
+    color: #dbdadbb0;
+}
+
+.product-box .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    background: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.product-box .btn:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.product-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-box .btn-hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.product-box .btn-hover:hover {
+    background-color: #0F0D0F;
+    color: #fff;
+}
+
+.product-box .product-img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* footer */
+.site-footer {
+    background-color: transparent;
+    color: #DBDADB;
+    padding: 20px 0;
+    text-align: center;
+    font-size: .875rem !important;
+    margin-top: 300px;
+}
+
+.site-footer .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-footer p {
+    color: #DBDADB;
+    margin: 0;
+    text-decoration: none;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #DBDADB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: .875rem !important;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* features */
+.features {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.feature-box {
+    flex: 1 1 23%;
+    max-width: 23%;
+    min-height: 200px;
+    border: 1px solid var(--Dprimary-color);
+    border-radius: 8px;
+    background: transparent;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.feature-box i {
+    color: var(--highlight-color);
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.feature-box p {
+    color: #dbdadb;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+  
